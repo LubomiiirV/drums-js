@@ -3,16 +3,14 @@ window.addEventListener("keydown", function (e) {
   let audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 
   element.classList.add("playing");
-  
+
   if (!audio) return;
   audio.currentTime = 0;
   audio.play();
-
 });
 
 function removeTransition(e) {
-    this.classList.remove("playing");
-    
+    this.classList.remove("playing");  
 };
 
 const keys = document.querySelectorAll(".key");
