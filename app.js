@@ -1,6 +1,6 @@
 window.addEventListener("keydown", playsound);
 
-function removeTransition(e) {
+function removeTransition() {
   this.classList.remove("playing");
 }
 
